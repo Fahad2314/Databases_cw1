@@ -198,3 +198,30 @@ VALUES(3,3);
 INSERT INTO likeStatus
 (employee_id,status_id)
 VALUES (3,1);
+
+-- Events inserted into the events table
+-- Social Events
+INSERT INTO events
+(event_id, event_creator_id, event_type, event_description, event_date, event_time, event_location)
+VALUES (default, 1, 'Social','Catch up with Ronaldo & discuss Nike', '2018-11-14','15:00:00','Staples Center');
+
+INSERT INTO events
+(event_id, event_creator_id, event_type, event_description, event_date, event_time, event_location)
+VALUES (default, 3, 'Social','Visit Ronaldo in Turin', '2018-11-20','00:00:00','Turin, Italy');
+
+INSERT INTO events
+(event_id, event_creator_id, event_type, event_description, event_date, event_time, event_location)
+VALUES (default, 1, 'Social','Watch Serena play', '2019-09-07','12:00:00','Wimbeldon, London');
+
+--Business events
+INSERT INTO events
+(event_id, event_creator_id, event_type, event_description, event_date, event_time, event_location)
+VALUES (default, 1, 'Business','Shoot New Years Nike ad with Ronaldo and Serena', '2019-10-01','15:00:00','Nike Headquarters, Oregon');
+
+INSERT INTO events
+(event_id, event_creator_id, event_type, event_description, event_date, event_time, event_location)
+VALUES (default, 2, 'Business','Discuss new menswear line with Lebron', '2019-03-01','12:00:00','Hilton, New York');
+
+INSERT INTO events
+(event_id, event_creator_id, event_type, event_description, event_date, event_time, event_location)
+VALUES (default, 3, 'Business','Meet Lebron about new Nike contracts ', '2019-11-14','12:00:00','Los Angeles, Staples Center');
