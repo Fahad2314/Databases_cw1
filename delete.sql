@@ -1,5 +1,6 @@
 
 --DELETE STATEMENT FOR THE MOST CONTROVERSIAL
+-- first inner join comments and statuses table 
 
 DELETE
 FROM employee 
