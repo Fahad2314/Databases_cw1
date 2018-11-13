@@ -87,6 +87,12 @@ INSERT INTO comments
 VALUES (default,3,1,'Congraulations Lebron, that is amazing',
 CURRENT_TIMESTAMP);
 
+INSERT INTO comments
+(comment_id, comment_creator_id,status_id,comment_text,comment_timestamp)
+VALUES (default,1,1,'Thank you guys!',
+CURRENT_TIMESTAMP);
+
+
 INSERT INTO comments 
 (comment_id, comment_creator_id,status_id,comment_text,comment_timestamp)
 VALUES (default,2,2,'Really exciting game had me on the edge of my seat',
