@@ -57,9 +57,9 @@ CREATE TABLE likeStatus
     FOREIGN KEY (employee_id) REFERENCES employee(employee_id)
     ON DELETE CASCADE,
     FOREIGN KEY (status_id) REFERENCES statuses(status_id)
-    ON DELETE CASCADE,
+    ON DELETE CASCADE
 
-    )
+    );
 
 CREATE TABLE likeComment(
     employee_id INT(11) NOT NULL,
