@@ -194,6 +194,7 @@ VALUES(1,8);
 INSERT INTO likeStatus
 (employee_id,status_id)
 VALUES (1,4);
+
 -- Ronaldo likes for comments and statuses
 INSERT INTO likeComment
 (employee_id,comment_id)
@@ -210,6 +211,7 @@ VALUES(2,2);
 INSERT INTO likeStatus
 (employee_id,status_id)
 VALUES (2,1);
+
 -- Serena likes for statuses and comments
 INSERT INTO likeComment
 (employee_id,comment_id)
