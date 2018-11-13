@@ -56,23 +56,21 @@ SELECT * FROM
 
 -- REAL FINAL ANSWER 4.7 MOST CONTROVERSIAL EMPLOYEE
 
-
-    SELECT * FROM
-    likeStatus l
-    INNER JOIN 
-            (SELECT * FROM 
-            events p
-            INNER JOIN
-                (SELECT * FROM employee e
-                INNER JOIN 
-                        (SELECT COUNT(comment_id) AS 'Comment Count',comment_creator_id , status_id 
-                        FROM comments 
-                        GROUP BY status_id 
-                        ORDER BY COUNT(comment_id) DESC
-                        LIMIT 1) AS T
-                ON e.employee_id= comment_creator_id) AS T2
-            ON p.event_creator_id=T2.employee_id) AS T3
-    ON l.employee_id = T3.employee_id;
-
+SELECT T3.employee_id,T3.emp_name, T3.emp_surname, T3.emp_sex, T3.emp_dob, T3.emp_email, T3.Comment_Count, T3.status_id,l.status_id AS 'liked Status', event_id AS 'Event ', T3.event_type, T3.event_description, T3.event_date, T3.event_time, T3.event_location 
+FROM     likeStatus l     
+INNER JOIN              
+    (SELECT * FROM              
+        events p
+        INNER JOIN
+        (SELECT * FROM employee e
+         INNER JOIN
+            (SELECT COUNT(comment_id) AS 'Comment_Count',comment_creator_id , status_id
+                   FROM comments
+             GROUP BY status_id
+                ORDER BY COUNT(comment_id) DESC
+             LIMIT 1) AS T                 
+         ON e.employee_id= comment_creator_id) AS T2
+     ON p.event_creator_id=T2.employee_id) AS T3
+     ON l.employee_id = T3.employee_id;
 
         
