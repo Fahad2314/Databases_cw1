@@ -77,6 +77,7 @@ INSERT INTO statuses
 VALUES (default,4,'Going @Wingstop for some good food!!!',
 CURRENT_TIMESTAMP);
 
+-- Comments Inserts
 INSERT INTO comments
 (comment_id, comment_creator_id,status_id,comment_text,comment_timestamp)
 VALUES (default, 2,1,'Congratulations bro !',
