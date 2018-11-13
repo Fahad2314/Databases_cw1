@@ -3,7 +3,7 @@ SELECT emp_name, emp_surname, emp_email
 FROM employee;
 
 --Return the oldest status text
-SELECT status_text FROM statuses
+SELECT status_text,status_timestamp FROM statuses
 ORDER BY status_timestamp ASC LIMIT 1;
 
 -- How many STATUSES, COMMENTS AND EVENTS
@@ -21,7 +21,7 @@ SELECT (
 /* converted month date to numerical so that any year that has dates in february 
 will be counted rather than hardcoding time interval
 */
-SELECT COUNT(event_id) as 'Number of Events'
+SELECT COUNT(event_id) as 'Number of Events in Feb'
 FROM events 
 WHERE MONTH(event_date) = 2
 GROUP BY event_type;
