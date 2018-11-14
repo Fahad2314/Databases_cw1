@@ -1,3 +1,5 @@
+--AL-FAHAD ABDUL-MUMUNI
+
 --Return name and email from employee
 SELECT emp_name, emp_surname, emp_email
 FROM employee;
@@ -34,6 +36,9 @@ GROUP BY employee_id;
 
 
 -- TOP 2 employees by Status and email 4.6 Top two parcipating 
+--UNION COUNTS OF STATUSES AND COMMENTS FOR EACH EMPLOYEE 
+-- INNER JOIN TABLE RESULTS to employee table on employee_id
+
 SELECT * FROM
     (SELECT * FROM employee e
     INNER JOIN
@@ -54,7 +59,8 @@ SELECT * FROM
     ORDER BY  Tot DESC;
 
 
--- REAL FINAL ANSWER 4.7 MOST CONTROVERSIAL EMPLOYEE
+-- MOST CONTROVERSIAL EMPLOYEE
+
 
 SELECT T3.employee_id,T3.emp_name, T3.emp_surname, T3.emp_sex, T3.emp_dob, T3.emp_email, T3.Comment_Count, T3.status_id,l.status_id AS 'liked Status', event_id AS 'Event ', T3.event_type, T3.event_description, T3.event_date, T3.event_time, T3.event_location 
 FROM     likeStatus l     
