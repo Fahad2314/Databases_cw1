@@ -1,3 +1,6 @@
+--AL-FAHAD ABDUL-MUMUNI
+
+
 CREATE TABLE employee
     (
     employee_id INT(11) NOT NULL AUTO_INCREMENT,
