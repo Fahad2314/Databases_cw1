@@ -1,3 +1,5 @@
+--AL-FAHAD ABDUL-MUMUNI
+
 -- 5.1 Change events that after 17:00 to Social 
 UPDATE events 
 SET event_type = "Social" 
