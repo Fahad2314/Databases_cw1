@@ -1,3 +1,7 @@
+--AL-FAHAD ABDUL-MUMUNI
+
+
+--INSERT INTO EMPLOYEE TABLE
 INSERT INTO employee 
 (employee_id,emp_name,emp_surname,emp_sex,emp_dob,emp_email)
 VALUES (default,'Lebron','James','Male','1984-12-30','lbj23@gmail.com');
