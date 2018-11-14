@@ -1,3 +1,4 @@
+--AL-FAHAD ABDUL-MUMUNI
 CREATE VIEW future_events AS
 SELECT * FROM events WHERE event_date > NOW()
 WITH CHECK OPTION;
