@@ -1,6 +1,8 @@
-
---DELETE STATEMENT FOR THE MOST CONTROVERSIAL
--- first inner join comments and statuses table 
+-- Al-Fahad Abdul-Mumuni
+--DELETE STATEMENT FOR THE MOST CONTROVERSIAL EMPLOYEE
+-- first inner join comments and statuses table on status_id alias AS T
+--- join employee table to the table T on employee_id and select the employee email
+-- DELETE from employee table where the email = the email selected from the joint/subquery TABLE T5
 
 DELETE
 FROM employee 
