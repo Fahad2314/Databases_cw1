@@ -1,3 +1,5 @@
+--AL-FAHAD ABDUL-MUMUNI
+
 --Return name and email from employee
 SELECT emp_name, emp_surname, emp_email
 FROM employee;
@@ -34,6 +36,10 @@ GROUP BY employee_id;
 
 
 -- TOP 2 employees by Status and email 4.6 Top two parcipating 
+-- UNION joining tables counting statuses and comments for each employee as Table T
+--LIMIT 2 ensures that only the top 2 results will be returned
+-- join tables in subquery on employee_id order in DESC order
+
 SELECT * FROM
     (SELECT * FROM employee e
     INNER JOIN
@@ -54,7 +60,9 @@ SELECT * FROM
     ORDER BY  Tot DESC;
 
 
--- REAL FINAL ANSWER 4.7 MOST CONTROVERSIAL EMPLOYEE
+-- MOST  CONTROVERSIAL EMPLOYEE 4.7
+
+
 SELECT * FROM
     employee AS e
     INNER JOIN 
