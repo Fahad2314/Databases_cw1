@@ -269,28 +269,28 @@ VALUES (default, 3, 'Social','Visit Ronaldo in Turin', '2018-01-20','00:00:00','
 
 INSERT INTO events
 (event_id, event_creator_id, event_type, event_description, event_date, event_time, event_location)
-VALUES (default, 1, 'Social','Watch Serena play', '2019-01-07','12:00:00','Wimbeldon, London');
+VALUES (default, 1, 'Social','Watch Serena play', '2018-01-07','12:00:00','Wimbeldon, London');
 
 INSERT INTO events
 (event_id, event_creator_id, event_type, event_description, event_date, event_time, event_location)
-VALUES (default, 3, 'Social',' Valentines with Lebron', '2019-02-14','12:00:00','Paris');
+VALUES (default, 3, 'Social',' Valentines with Lebron', '2018-02-14','12:00:00','Paris');
 
 INSERT INTO events
 (event_id, event_creator_id, event_type, event_description, event_date, event_time, event_location)
-VALUES (default, 3, 'Social','  1 Year Anniversary with Lebron', '2020-02-14','12:00:00','Paris');
+VALUES (default, 3, 'Social','  1 Year Anniversary with Lebron', '2018-02-14','12:00:00','Paris');
 
 --Business events
 INSERT INTO events
 (event_id, event_creator_id, event_type, event_description, event_date, event_time, event_location)
-VALUES (default, 1, 'Business','Shoot New Years Nike ad with Ronaldo and Serena', '2019-01-01','15:00:00','Nike Headquarters, Oregon');
+VALUES (default, 1, 'Business','Shoot New Years Nike ad with Ronaldo and Serena', '2018-01-01','15:00:00','Nike Headquarters, Oregon');
 
 INSERT INTO events
 (event_id, event_creator_id, event_type, event_description, event_date, event_time, event_location)
-VALUES (default, 2, 'Business','Discuss new menswear line with Lebron', '2019-01-01','12:00:00','Hilton, New York');
+VALUES (default, 2, 'Business','Discuss new menswear line with Lebron', '2018-01-01','12:00:00','Hilton, New York');
 
 INSERT INTO events
 (event_id, event_creator_id, event_type, event_description, event_date, event_time, event_location)
-VALUES (default, 3, 'Business','Meet Lebron about new Nike contracts ', '2019-01-14','12:00:00','Los Angeles, Staples Center');
+VALUES (default, 3, 'Business','Meet Lebron about new Nike contracts ', '2018-01-14','12:00:00','Los Angeles, Staples Center');
 
 INSERT INTO events
 (event_id, event_creator_id, event_type, event_description, event_date, event_time, event_location)
