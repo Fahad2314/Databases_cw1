@@ -5,7 +5,7 @@ SELECT emp_name, emp_surname, emp_email
 FROM employee;
 
 --Return the oldest status text
-SELECT status_text FROM statuses
+SELECT status_text,status_timestamp FROM statuses
 ORDER BY status_timestamp ASC LIMIT 1;
 
 -- How many STATUSES, COMMENTS AND EVENTS
