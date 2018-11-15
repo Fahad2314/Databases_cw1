@@ -61,21 +61,24 @@ SELECT * FROM
 
 -- MOST CONTROVERSIAL EMPLOYEE
 
-
-    SELECT * FROM
-    events eve
-    INNER JOIN        
+SELECT * FROM
+         comments c
+         INNER JOIN 
             (SELECT * FROM
-            employee e
-            INNER JOIN 
-                (SELECT * FROM
-                statuses s
-                INNER JOIN 
-                    (SELECT COUNT(comment_id) AS CommentCount,status_id AS s_id, comment_text 
-                    FROM comments 
-                    GROUP BY status_id
-                    LIMIT 1) AS T
-                ON s.status_id = s_id) AS T2
-            ON e.employee_id= T2.creator_id) AS T3
-    ON eve.event_creator_id = T3.creator_id;
-        
+            events eve
+          INNER JOIN        
+               (SELECT * FROM
+                 employee e
+                   INNER JOIN 
+                  (SELECT * FROM
+                     statuses s
+                       INNER JOIN 
+                        (SELECT COUNT(comment_id) AS CommentCount,status_id AS s_id, comment_text 
+                           FROM comments 
+                          GROUP BY status_id
+                          LIMIT 1) AS T
+                       ON s.status_id = s_id) AS T2
+                   ON e.employee_id= T2.creator_id) AS T3
+           ON eve.event_creator_id = T3.creator_id) AS T4
+   
+       ON c.comment_creator_id = T4.creator_id;    
