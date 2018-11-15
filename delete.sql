@@ -6,8 +6,8 @@
 
 DELETE
 FROM employee 
-WHERE employee.emp_email = (SELECT asd FROM 
-    (SELECT emp_email AS asd
+WHERE employee.emp_email = (SELECT emailtodelete FROM 
+    (SELECT emp_email AS emailtodelete
                                 FROM employee e 
                                 INNER JOIN 
                                                 (SELECT * FROM statuses s
